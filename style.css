@@ -1,6 +1,5 @@
 /*? CSS For Counter  */
 
-
 * {
     margin: 0;
     padding: 0;
@@ -33,8 +32,7 @@ body {
     background-color: #4d4855;
     background-image: linear-gradient(147deg, #515151 0%, #151515 74%);
     box-shadow: 2px 2px 2px 2px white;
-
-
+    transition: all 0.2s ease-in-out
 }
 
 .container h2 {
@@ -49,7 +47,7 @@ body {
 }
 
 .buttons {
-    width: 50%;
+    width: 80%;
     display: flex;
     column-gap: 20%;
 }
@@ -62,7 +60,6 @@ body {
     cursor: pointer;
     border-radius: 20px;
     border: none;
-    transition: all 0.1s ease-in-out
 }
 
 .container .buttons #decrement:active {
@@ -77,15 +74,16 @@ body {
 
 
 /*? Media Query  */
-@media only screen and (max-width:769px){
+@media only screen and (max-width:600px){
 
     .container{
         width: 70%;
+        height: 60%;
         overflow-y: hidden;
     }
 
     .container h2{
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
     .container h1{
@@ -98,7 +96,7 @@ body {
 
     .container .buttons button{
         width: 60vw;
+        height: 6vh;
         border-radius: 30px;
-        font-size: 3rem;
     }
 }
